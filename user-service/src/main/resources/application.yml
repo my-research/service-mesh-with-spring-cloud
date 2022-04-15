@@ -2,11 +2,15 @@ spring:
   application:
     name: user-service
 
-eureka:
-  instance:
-    instance-id: gi
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+default:
+  # real-server-url: server
+  # mock-server-url: mock-server
+
+#eureka:
+#  instance:
+#    instance-id: gi
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://127.0.0.1:8761/eureka
