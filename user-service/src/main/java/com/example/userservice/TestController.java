@@ -7,13 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    int a= 10;
-
-    @Value("${eureka.client.service-url}")
-    private String data;
-
     @GetMapping("/")
     public String hello() {
-        return data;
+        return "hello from [user-service]";
     }
 }
